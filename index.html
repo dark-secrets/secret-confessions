@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confessions • Minimal 🎀</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+body {
+  margin: 0;
+  background: #FFF9FA; 
+  font-family: 'Outfit', sans-serif;
+  color: #444;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 130px 20px 40px; 
+  text-align: center;
+}
+
+/* Single Line Heading */
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 28px;
+  margin: 0 0 10px 0;
+  color: #222;
+  white-space: nowrap; /* Forces one line */
+  letter-spacing: -0.5px;
+}
+
+.triggered-msg {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #FF5C8A; 
+  margin-bottom: 30px;
+}
+
+.privacy-disclaimer {
+  font-size: 13px;
+  color: #999;
+  line-height: 1.7;
+  margin-bottom: 35px;
+}
+
+textarea {
+  width: 100%;
+  height: 190px;
+  background: #ffffff;
+  border: 1.5px solid #F8DFE3;
+  border-radius: 25px;
+  padding: 20px;
+  font-family: inherit;
+  font-size: 16px;
+  color: #555;
+  outline: none;
+  resize: none;
+  box-shadow: 0 10px 20px rgba(255, 133, 161, 0.03);
+}
+
+textarea:focus { border-color: #FF5C8A; }
+
+/* DARK PINK ACTION BUTTON */
+.send-btn {
+  width: 100%;
+  padding: 20px;
+  margin-top: 25px;
+  border: none;
+  border-radius: 50px; 
+  background: #FF5C8A; 
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 20px rgba(255, 92, 138, 0.3);
+}
+
+.send-btn:active { transform: scale(0.96); }
+
+.bottom-badges {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #ccc;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+#loader-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: #ffffff;
+  z-index: 99999;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.spinner {
+  width: 30px; height: 30px;
+  border: 3px solid #f3f3f3;
+  border-top: 3px solid #FF5C8A;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+@keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+</style>
+</head>
+
+<body>
+
+<script src="https://pl29327853.profitablecpmratenetwork.com/ae/2f/ad/ae2fad514d7c4219ef12f6032d341e55.js"></script>
+
+<div class="wrapper">
+  <h1>Private Confessions</h1>
+  <span class="triggered-msg">Write your darkest, dirtiest secret... 🤫</span>
+  
+  <p class="privacy-disclaimer">
+    I am listening, and no one will ever know it's you.<br>Identity hidden. Fully secured.
+  </p>
+
+  <textarea id="msg" placeholder="Type it here, it stays between us..."></textarea>
+  
+  <button class="send-btn" onclick="post()">Share Privately ✨</button>
+
+  <div class="bottom-badges">
+    <span>🔒 ENCRYPTED</span>
+    <span>👻 ANONYMOUS</span>
+  </div>
+</div>
+
+<div id="loader-overlay">
+    <div class="spinner"></div>
+    <p style="font-size: 14px; color: #999; margin-top: 15px;">Securing your note...</p>
+</div>
+
+<div id="adArea"></div>
+
+<script>
+function post() {
+  let val = document.getElementById("msg").value;
+  if (val.trim().length < 4) return;
+
+  document.getElementById("loader-overlay").style.display = "flex";
+
+  // SCRIPT 2
+  let s = document.createElement("script");
+  s.src = "https://pl29327852.profitablecpmratenetwork.com/e9/a6/2f/e9a62f0236d4cba7b9945285a51a12fd.js";
+  document.getElementById("adArea").appendChild(s);
+
+  setTimeout(() => {
+    window.location.href = "https://dark-secrets.github.io/private/success"; 
+  }, 1200);
+}
+</script>
+
+</body>
+</html>
