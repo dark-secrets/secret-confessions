@@ -1,54 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Private Confessions 🎀</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
-<style>
-* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
-body { margin: 0; background: #FFF9FA; font-family: 'Outfit', sans-serif; color: #444; display: flex; justify-content: center; }
-.wrapper { width: 100%; max-width: 420px; padding: 130px 20px 40px; text-align: center; }
-h1 { font-family: 'Playfair Display', serif; font-size: 28px; margin: 0 0 10px 0; color: #222; }
-.triggered-msg { display: block; font-size: 14px; font-weight: 600; color: #FF5C8A; margin-bottom: 30px; }
-textarea { width: 100%; height: 190px; background: #ffffff; border: 1.5px solid #F8DFE3; border-radius: 25px; padding: 20px; font-size: 16px; outline: none; resize: none; box-shadow: 0 10px 20px rgba(255, 133, 161, 0.03); }
-.send-btn { width: 100%; padding: 20px; margin-top: 25px; border: none; border-radius: 50px; background: #FF5C8A; color: #fff; font-size: 16px; font-weight: 700; cursor: pointer; box-shadow: 0 8px 20px rgba(255, 92, 138, 0.3); }
-.bottom-badges { margin-top: 50px; display: flex; justify-content: center; gap: 15px; font-size: 10px; color: #ccc; letter-spacing: 1.5px; }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Confessions 🎀</title>
+    
+    <script type='text/javascript' src='//pl29327853.profitablecpmratenetwork.com/ae/2f/ad/ae2fad514d7c4219ef12f6032d341e55.js'></script>
 
-<script type='text/javascript' src='//pl29327853.profitablecpmratenetwork.com/ae/2f/ad/ae2fad514d7c4219ef12f6032d341e55.js'></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Outfit:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+        body { margin: 0; background: #FFF9FA; font-family: 'Outfit', sans-serif; color: #444; display: flex; justify-content: center; }
+        .wrapper { width: 100%; max-width: 420px; padding: 120px 20px 40px; text-align: center; }
+        h1 { font-family: 'Playfair Display', serif; font-size: 28px; margin-bottom: 10px; color: #222; }
+        .sub-text { display: block; font-size: 14px; font-weight: 600; color: #FF5C8A; margin-bottom: 30px; }
+        textarea { width: 100%; height: 200px; background: #fff; border: 1.5px solid #F8DFE3; border-radius: 25px; padding: 20px; font-size: 16px; outline: none; resize: none; box-shadow: 0 10px 20px rgba(255,133,161,0.05); }
+        .send-btn { width: 100%; padding: 20px; margin-top: 25px; border: none; border-radius: 50px; background: #FF5C8A; color: #fff; font-size: 17px; font-weight: 700; cursor: pointer; box-shadow: 0 8px 20px rgba(255, 92, 138, 0.3); }
+        .bottom-badges { margin-top: 50px; display: flex; justify-content: center; gap: 15px; font-size: 10px; color: #ccc; letter-spacing: 1.5px; font-weight: bold; }
+    </style>
 </head>
 <body>
 
-<div class="wrapper">
-  <h1>Private Confessions</h1>
-  <span class="triggered-msg">Write your darkest secret... 🤫</span>
-  <textarea id="msg" placeholder="Type it here, no one will know..."></textarea>
-  
-  <button class="send-btn" id="submitBtn">Share Privately ✨</button>
-  
-  <div class="bottom-badges"><span>🔒 ENCRYPTED</span><span>👻 ANONYMOUS</span></div>
-</div>
+    <div class="wrapper">
+        <h1>Private Confessions</h1>
+        <span class="sub-text">Your secrets are safe with us 🤫</span>
+        <textarea id="userInput" placeholder="Write your secret here..."></textarea>
+        
+        <button class="send-btn" onclick="handleSubmission()">Share Privately ✨</button>
+        
+        <div class="bottom-badges"><span>🔒 ENCRYPTED</span><span>👻 ANONYMOUS</span></div>
+    </div>
 
-<script>
-document.getElementById('submitBtn').addEventListener('click', function() {
-    var text = document.getElementById('msg').value;
-    
-    if(text.trim().length > 2) {
-        // 1. POPUNDER SCRIPT (Directly injected on click)
-        var s = document.createElement('script');
-        s.src = '//pl29327852.profitablecpmratenetwork.com/e9/a6/2f/e9a62f0236d4cba7b9945285a51a12fd.js';
-        document.body.appendChild(s);
+    <script type='text/javascript' src='//pl29327852.profitablecpmratenetwork.com/e9/a6/2f/e9a62f0236d4cba7b9945285a51a12fd.js'></script>
 
-        // 2. Clear and Refresh (No OK button, no waiting)
-        setTimeout(function() {
-            window.location.reload();
-        }, 300);
-    } else {
-        document.getElementById('msg').placeholder = "Write something first!";
-    }
-});
-</script>
+    <script>
+        function handleSubmission() {
+            var msg = document.getElementById('userInput').value;
+            if(msg.trim().length > 2) {
+                // No Alert, No Wait. Seedha refresh taaki user ko "Sent" feel ho
+                // Popunder script niche load ho chuki hai, wo click par trigger hogi
+                window.location.reload();
+            } else {
+                alert("Please write a secret first!");
+            }
+        }
+    </script>
 
 </body>
 </html>
